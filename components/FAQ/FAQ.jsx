@@ -25,7 +25,7 @@ const FAQ = () => {
                 active = true;
             }
             return (
-                <>
+                <React.Fragment key={key}>
                     <div className="f-d f-vt faq-data" key={key}>
                         <div className="c-pointer" onClick={() => handleActiveQuestion(key)}>
                             <div className="g-d g-v-c question-wrapper">
@@ -58,7 +58,7 @@ const FAQ = () => {
                             }
                         `}
                     </style>
-                </>
+                </React.Fragment>
             );
         });
     };
